@@ -1,0 +1,21 @@
+{
+    "name": "veka-server/bdd_sqlite",
+    "description": "Une classe de gestion de Bdd sqlite pour mon framework\n\n",
+    "license": "MIT",
+    "keywords": ["bdd","sqlite"],
+    "authors": [
+        {
+            "name": "Vanhaezebrouck Nicolas",
+            "email": "contact@veka-server.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "VekaServer\\BddSqlite\\" : "src/"
+        }
+    },
+    "require": {
+        "veka-server/interfaces": "^0.2",
+        "ext-pdo": "*"
+    }
+}
