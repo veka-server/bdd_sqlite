@@ -33,10 +33,7 @@ class Bdd implements BddInterface {
         if (!$this->conn instanceof \PDO) {
             $dsn = '';
             if ($this->path != '') {
-                $dsn .= 'sqlite:' . $this->path . ';';
-            }
-            if ($this->charset != '') {
-                $dsn .= 'options=\'--client_encoding=' . $this->charset . '\'' . ';';
+                $dsn .= 'sqlite:' . $this->path;
             }
             $this->conn = new \PDO($dsn);
             $this->conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
